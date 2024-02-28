@@ -1,0 +1,22 @@
+{
+  "name": "bunchee-export-pkgjson",
+  "version": "1.0.0",
+  "module": "index.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "bunchee"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "bunchee": "^4.4.8"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
